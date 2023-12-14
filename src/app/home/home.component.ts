@@ -18,7 +18,7 @@ import { HousingLocation } from '../housing-location';
       </form>
     </section>
     <section class="results">
-        <app-housing-location>[housingLocation]="housingLocation"</app-housing-location>
+        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
     </section>
     
   `,
@@ -33,7 +33,7 @@ export class HomeComponent {
     name: 'Test Home',
     city: 'Test City',
     state: 'ST',
-    photo: '${this.baseUrl}/exapmle-house.jpg',
+    photo: `${this.baseUrl}/example-house.jpg`,
     availableUnits: 99,
     wifi: true,
     laundry: false,
